@@ -5,6 +5,7 @@ import { IUserLogin } from '../shared/interfaces/IUserLogin';
 import { HttpClient } from '@angular/common/http';
 import { USER_LOGIN_URL } from '../shared/constants/urls';
 import { ToastrService } from 'ngx-toastr';
+import { IUserRegister } from '../shared/interfaces/IUserRegister';
 
 const USER_KEY = 'User';
 
@@ -36,6 +37,8 @@ export class UserService {
       })
     );
   }
+
+  register(userRegister: IUserRegister): Observable<User> {}
 
   logout() {
     this.userSubject.next(new User());
