@@ -8,7 +8,7 @@ import { UserService } from 'src/app/services/user.service';
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.css'],
 })
-export class LoginPageComponent {
+export class LoginPageComponent implements OnInit {
   loginForm!: FormGroup;
   isSubmitted = false;
   returnUrl = '';
