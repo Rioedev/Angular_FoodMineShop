@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
 
-const VALIDATORS_MESSAGES: any = {
+const VALIDATORS_MESSAGES: Record<string, string> = {
   required: 'Should not be empty',
   email: 'Email is not valid',
   minlength: 'Field is too short',
